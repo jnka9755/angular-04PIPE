@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipesApp';
 
-  public name: string = 'Juan Camilo'
 }

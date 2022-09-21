@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRouterModule } from './app-router.module';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
 
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
+import { SharedModule } from './shared/shared.module';
+import { PipesComponentModule } from './pipes-component/pipes-component.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +13,9 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule
+    AppRouterModule,
+    SharedModule,
+    PipesComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
