@@ -1,1 +1,50 @@
-<p>commons works!</p>
+<h1>Pipes Básicos</h1>
+
+<h2>Textos</h2>
+<p>Pipes incluidos en Angular - Usualmente en el Common Module.</p>
+
+<div class="flex card-container">
+    <div class="flex-1 p-4">
+        <p-card header="Uppercase" [subheader]="nameUC">
+            {{ nameUC | uppercase }}
+        </p-card>
+    </div>
+    <div class="flex-1 p-4">
+        <p-card header="Lowercase" [subheader]="nameLC">
+            {{ nameLC | lowercase }}
+        </p-card>
+    </div>
+    <div class="flex-1 p-4">
+        <p-card header="Titlecase" [subheader]="nameTC">
+            {{ nameTC | titlecase}}
+        </p-card>
+    </div>
+</div>
+
+<h2>Fechas</h2>
+<p>Pipes para mostrar fechas.</p>
+
+<div class="flex card-container">
+    <div class="flex-1 p-4">
+        <p-card header="Normal">
+            <ul>
+                <li>date</li>
+                <li>date | date</li>
+                <li>date | date: 'short'</li>
+                <li>date | date: 'long'</li>
+                <li>date | date: 'EEEE:dd:MMM:hh:mm:ss'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="flex-1 p-4">
+        <p-card header="Pipes">
+            <ul>
+                <li>{{ date }}</li>
+                <li>{{ date | date }}</li>
+                <li>{{ date | date: 'short'}}</li>
+                <li>{{ date | date: 'long'}}</li>
+                <li>{{ date | date: 'EEEE:dd:MMM:hh:mm:ss'}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>

@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonsComponent implements OnInit {
 
+
+  public nameUC: string = 'juan';
+  public nameLC: string = 'JUAN';
+  public nameTC: string = 'JuAn CaMiLo';
+
+  public date: Date = new Date();
+
+
   constructor() { }
 
   ngOnInit(): void {
