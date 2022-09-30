@@ -1,6 +1,7 @@
-import { LOCALE_ID, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { LOCALE_ID, NgModule } from '@angular/core'
 import { AppRouterModule } from './app-router.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component'
 
@@ -8,9 +9,11 @@ import { SharedModule } from './shared/shared.module';
 import { PipesComponentModule } from './pipes-component/pipes-component.module';
 
 import  localeEsCO  from '@angular/common/locales/es-CO';
+import  localeFr from '@angular/common/locales/fr'
 import { registerLocaleData } from '@angular/common';
 
 registerLocaleData(localeEsCO);
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
@@ -18,6 +21,7 @@ registerLocaleData(localeEsCO);
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRouterModule,
     SharedModule,
     PipesComponentModule

@@ -33,7 +33,14 @@
                 <li>date | date: 'short'</li>
                 <li>date | date: 'long'</li>
                 <li>date | date: 'EEEE:dd:MMM:hh:mm:ss'</li>
+                
             </ul>
+            <hr>
+                <ul>
+                    <li> date | date: 'long': 'GMT-6'</li>
+                    <li> date | date: 'long': 'GMT-4'</li>
+                    <li>date | date: 'long': '': 'fr'</li>
+                </ul>
         </p-card>
     </div>
     <div class="flex-1 p-4">
@@ -45,6 +52,12 @@
                 <li>{{ date | date: 'long'}}</li>
                 <li>{{ date | date: 'EEEE:dd:MMM:hh:mm:ss'}}</li>
             </ul>
+            <hr>
+                <ul>
+                    <li>{{ date | date: 'long': 'GMT-6'}}</li>
+                    <li>{{ date | date: 'long': 'GMT-4'}}</li>
+                    <li>{{ date | date: 'long': '': 'fr'}}</li>
+                </ul>
         </p-card>
     </div>
 </div>

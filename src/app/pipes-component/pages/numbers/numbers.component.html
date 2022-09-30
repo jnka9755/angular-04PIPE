@@ -1,1 +1,58 @@
-<p>numbers works!</p>
+<h1>Pipes Númericos</h1>
+
+<h2>Números</h2>
+<p>Pipes incluidos en Angular - Usualmente en el Common Module.</p>
+
+<div class="flex card-container">
+    <div class="flex-1 p-4">
+        <p-card header="Number" [subheader]="numberA.toString()">
+
+            <ul>
+                <li>
+                    <i class="pi pi-dollar"></i>
+                    {{numberA | number}}
+                </li>
+                <li>
+                    <i class="pi pi-dollar"></i>
+                    {{numberA | number: '1.2-2'}}
+                </li>
+                <li>
+                    <i class="pi pi-dollar"></i>
+                    {{numberA | number: '.2-2'}}
+                </li>
+            </ul>    
+        </p-card>
+    </div>
+    <div class="flex-1 p-4">
+        <p-card header="Currency" [subheader]="numberA.toString()">
+
+            <ul>
+                <li>
+                    {{numberA | currency}}
+                </li>
+                <li>
+                    {{numberA | currency: 'CAD'}}
+                </li>
+                <li>
+                    {{numberA | currency: '$'}}
+                </li>
+                <li>
+                    {{numberA | currency: 'CAD': 'symbol-narrow': '.4-4'}}
+                </li>
+            </ul>    
+        </p-card>
+    </div>
+    <div class="flex-1 p-4">
+        <p-card header="Percent" [subheader]="percent.toString()">
+
+            <ul>
+                <li>
+                    {{percent | percent}}
+                </li>
+                <li>
+                    {{percent | percent: '.3-3'}}
+                </li>
+            </ul>    
+        </p-card>
+    </div>
+</div>
