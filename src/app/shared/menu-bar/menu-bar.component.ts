@@ -38,6 +38,7 @@ export class MenuBarComponent implements OnInit {
       {
         label: 'Personalizados',
         icon: 'pi pi-cog',
+        routerLink: 'organize'
       }
     ];
   }

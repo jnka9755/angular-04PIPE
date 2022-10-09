@@ -8,6 +8,10 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { CommonsComponent } from './pages/commons/commons.component';
 import { OrganizeComponent } from './pages/organize/organize.component';
 
+import { UppercasePipe } from './pipes/uppercase.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { SortPipe } from './pipes/sort.pipe';
+
 
 
 
@@ -16,7 +20,10 @@ import { OrganizeComponent } from './pages/organize/organize.component';
     NumbersComponent,
     NotCommonsComponent,
     CommonsComponent,
-    OrganizeComponent
+    OrganizeComponent,
+    UppercasePipe,
+    FlyPipe,
+    SortPipe
   ],
   imports: [
     CommonModule,
